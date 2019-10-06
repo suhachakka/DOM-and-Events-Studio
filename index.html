@@ -10,6 +10,7 @@
             <h1>Flight Simulator</h1>
             <h2>Current Flight Status</h2>
             <p id = "flightStatus">Space shuttle ready for takeoff</p>
+            <!-- <button id = "paraChange" onclick ="changePara()">clickMe</button> -->
             <h2>Shuttle Trajectory</h2>
         </div>
         <div style="text-align: center; height: 400px; width: 100%;" >
@@ -20,21 +21,23 @@
                 <p>Houston, we are ready when you are!</p>
             </div>
             <div id = "shuttleBackground" style = "position: relative;">
+                <!-- <button id="change" onclick="changeColor()">clickme</button> -->
                 <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
             </div>
             <div style = "text-align: center; display: inline-block;">
-                    <button>Up</button>
-                    <button>Down</button>
-                    <button>Right</button>
-                    <button>Left</button>
+                    <button onclick ="up()">Up</button>
+                    <button onclick="down()">Down</button>
+                    <button onclick="right()">Right</button>
+                    <button onclick="left()">Left</button>
                     <h3>Space Shuttle Height</h3>
-                    <p id='spaceShuttleHeight'>0</p><p style = "display: inline-block;"> miles</p>
+                    <p id="spaceShuttleHeight">0</p><p style = "display: inline-block;"> miles</p>
+                    <!-- <button id="height" onclick="increaseShuttleHeight()">click me</button> -->
             </div>
         </div>
         <div style="text-align: center;">
-            <button id = "takeoff">Take off</button>
-            <button id = "landing">Land</button>
-            <button id = "missionAbort">Abort Mission</button>
+            <button id = "takeoff" onclick="takeOff()">Take off</button>
+            <button id = "landing" onclick="land()">Land</button>
+            <button id = "missionAbort" onclick="abort()">Abort Mission</button>
     </div>
     </body>
 </html>
